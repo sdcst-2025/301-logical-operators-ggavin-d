@@ -31,3 +31,27 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and divisible by 2.
 """
+import math
+
+
+# round(3.999999999999998, 4)
+
+number1 = float(input("enter your number"))
+
+
+
+sqroot = float(math.sqrt(number1))
+number2 = round(sqroot, 8)
+print(number2)
+
+
+if sqroot * sqroot == number1:
+    if number1 % 2 == 0:
+        print("number1 is a perfect square and divisible by 2")
+    else:
+        print("number1 is a perfect square but not divisible by 2")
+elif sqroot * sqroot == number1:
+        print("number1 is only a perfect square")
+else:
+    if number1 % 2 == 0:
+        print("number1 is only divisible by 2")

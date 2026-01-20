@@ -26,3 +26,12 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
+xx = int(input("enter first number"))
+yy = int(input("enter second number"))
+
+num = xx / yy
+
+if num == int(num):
+   print(f"{yy} is a factor of {xx}")
+elif num == float(num):
+   print(f"{yy} is not a factor of {xx}")

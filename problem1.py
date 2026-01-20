@@ -25,4 +25,18 @@ Enter a number: 36
 Enter a number: 16
 16 is not frue
 """
+import math
 
+xx = int(input("number"))
+
+
+if xx % 6 == 0:
+  if xx % 8 == 0:
+     print("xx is divisible by 8 and divisible by 6, not frue")
+  else:
+   print("only divisible by 6, frue")
+else:
+  if xx % 8 == 0:
+    print("only divisible by 8, not frue")
+  else:
+     print("neither divisible, not frue")
